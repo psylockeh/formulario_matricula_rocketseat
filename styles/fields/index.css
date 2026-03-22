@@ -1,3 +1,5 @@
+@import url(droparea.css);
+
 input,
 textarea,
 select {
@@ -48,4 +50,21 @@ input[type="date"] {
 select {
   background: url(../../assets/icons/arrow-down-01.png) no-repeat right 1rem
     center/0.75rem;
+}
+
+.adress .flex {
+  gap: 1.25rem;
+}
+
+.input-wrapper:has([disabled]) {
+  opacity: 0.5;
+}
+
+input {
+  &[disabled] {
+    background-color: var(--surface-disabled);
+    border: 1px solid var(--stroke-default);
+
+    color: var(--text-primary);
+  }
 }
