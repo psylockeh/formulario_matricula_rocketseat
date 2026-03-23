@@ -120,12 +120,53 @@
 
                 <div class="input-wrapper flex-1">
                   <label for="state">Estado</label>
-                  <input type="text" id="state" name="state" disabled />
+                  <input
+                    type="text"
+                    id="state"
+                    name="state"
+                    disabled
+                    value="SP"
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="gardian">
+              <legend>Informações do Responsável</legend>
+
+              <div class="input-wrapper">
+                <label for="gardian-name">Nome Completo do Responsável</label
+                ><input type="text" id="gardian-name" name="gardian-name" />
+                <small
+                  >Principal responsável legal e contato de emergência</small
+                >
+              </div>
+
+              <div class="input-wrapper">
+                <label for="phone">Telefone de Contato</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="(10) 9 8765-4321"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="email">Email</label>
+                <input type="email" id="mail" name="mail" required />
+
+                <div class="error">
+                  <img
+                    src="/assets/icons/alert-circle.png"
+                    alt="Ícone de alerta"
+                  />
                 </div>
               </div>
             </fieldset>
           </form>
         </div>
+        ''
       </main>
 
       <aside>
