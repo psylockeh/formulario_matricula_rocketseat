@@ -10,12 +10,31 @@
   }
 }
 
-.checkboz-wrapper {
+.checkbox-wrapper {
   position: relative;
 
   & [type="checkbox"] {
     all: unset;
     position: absolute;
     inset: 0;
+  }
+
+  .checkbox-image {
+    flex: 0 0 1.5rem;
+    height: 1.5rem;
+    background-image: url(../../assets/icons/checkbox-default.png);
+  }
+
+  &:hover,
+  &:focus-within {
+    .checkbox-image {
+      background-image: url(../../assets/icons/checkbox-focused.png);
+    }
+  }
+
+  &:has(:checked) {
+    .checkbox-image {
+      background-image: url(../../assets/icons/checkbox-checked.png);
+    }
   }
 }
